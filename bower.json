@@ -1,0 +1,26 @@
+{
+  "name": "CarouselTC",
+  "version": "0.0.0",
+  "authors": [
+    "Giorgio Aquino <gigetto@gmail.com>"
+  ],
+  "description": "Simple Responsive Images Carousel with lazy load",
+  "main": "carouselTC.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2",
+    "normalize-css": "~3.0.2",
+    "jquery": "~2.1.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.16"
+  }
+}

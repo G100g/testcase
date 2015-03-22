@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel TC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="src/carouselTC.css" />
+    
+    <script src="//localhost:35729/livereload.js"></script>
+    
+  </head>
+  <body ng-app="tcApp">
+ 
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div ng-controller="exampleCtrl">
+    
+	    <ng-carousel timeout="5000" width="1050" height="700">
+		    
+		    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-origin-src="https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="Sample Image 1" />
+
+		    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-origin-src="https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="Sample Image 2" />
+
+		    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-origin-src="https://unsplash.imgix.net/photo-1417128281290-30a42da46277?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="Sample Image 3" />
+		    
+		</ng-carousel>	
+	
+	</div>
+    
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    
+	<script src="src/carouselTC.js"></script>    
+    
+    <script>
+	
+	angular
+		.module('tcApp',
+				[
+					'g100gCarousel'
+				])
+				
+		.controller('exampleCtrl', function () {
+			
+			
+		});
+	    
+	</script>
+ 
+</body>
+</html>
